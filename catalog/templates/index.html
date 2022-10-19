@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Bienvenido a la pagina de alquiler de películas</h1>
+
+<p>Esta página fué creada en base al tutorial de Django de Mozzilla.</p>
+<p>El tutorial demuestra como crear el esqueleto de una aplicación web, defieniendo el mapeo de URL, las vistas, los modelos y los templates.</p>
+
+
+
+<h2>Acá se muestra un poco de contenido dinámico</h2>
+
+<p>Contamos con los siguientes registros</p>
+<ul>
+<li><strong>Peliculas:</strong> {{ num_movies }}</li>
+
+<li><strong>Autores:</strong> {{ num_authors }}</li>
+</ul>
+
+
+<p>Visitaste esta pagina {{ num_visits }} veces.</p>
+
+{% endblock %}
